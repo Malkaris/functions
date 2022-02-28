@@ -13,3 +13,13 @@
 # годов и выводила в консоль соответсвующее число строк вида:
 # 2000 - високосный год
 # 1900 - не високосный год
+
+def is_year_leap(year) -> bool:
+    if year%4 == 0 and year % 100:
+        return True
+    elif year%4 == 0 and year %400 == 0:
+        return True
+    else:
+        return False
+
+print(is_year_leap(1420))
